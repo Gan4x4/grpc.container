@@ -31,8 +31,8 @@ class DummyService(rpc.DummyServiceServicer):  # inheriting here from the protob
 
 
     # for gRPC
-    def AnalyzeImageRequest(self, grpc_request, grpc_context):
-        #pil_image = Image.open(io.BytesIO(grpc_request.image))
+    def analyzeImage(self, grpc_request, grpc_context):
+        pil_image = Image.open(io.BytesIO(grpc_request.image))
         #arr = self.preprocess(pil_image)
         description = "Hello world"
         result = service.AnalyzeResponse(description=description.to_json())
