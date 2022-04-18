@@ -1,8 +1,14 @@
 from concurrent import futures
 import grpc
+import os
+import sys
+
+currentdir = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, currentdir + os.sep + "generated")
 
 import generated.DummyService_pb2_grpc as rpc
 from DummyService import DummyService
+
 
 import time
 class Container:
