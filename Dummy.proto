@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service MSUAIService {
+    rpc analyzeImage (AnalyzeImageRequest) returns (AnalyzeResponse) {};
+}
+
+message AnalyzeImageRequest {
+    bytes image = 1;
+}
+
+message AnalyzeResponse {
+    string description = 1;
+}
