@@ -1,2 +1,5 @@
 numpy
 onnxruntime
+pillow
+grpcio
+grpcio-tools
