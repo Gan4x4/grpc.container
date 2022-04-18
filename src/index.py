@@ -16,7 +16,7 @@ class Container:
     def __init__(self, port=50051):
         self.port = port
         self.grpcServer = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-        rpc.add_FMBServiceServicer_to_server(DummyService(), self.grpcServer)
+        rpc.add_DummyServiceServicer_to_server(DummyService(), self.grpcServer)
         self.grpcServer.add_insecure_port(f'[::]:{self.port}')
         print(f'Starting server. Listening at {self.port}...')
 
