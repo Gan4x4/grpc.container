@@ -13,7 +13,7 @@ import sys
 import numpy as np
 
 
-class FMBService(rpc.DummyServiceServicer):  # inheriting here from the protobuf rpc file which is generated
+class DummyService(rpc.DummyServiceServicer):  # inheriting here from the protobuf rpc file which is generated
 
     def __init__(self):
         pass
