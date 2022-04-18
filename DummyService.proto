@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-service MSUAIService {
+service DummyService {
     rpc analyzeImage (AnalyzeImageRequest) returns (AnalyzeResponse) {};
 }
 
