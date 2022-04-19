@@ -10,7 +10,6 @@ import generated.DummyService_pb2_grpc as rpc
 from DummyService import DummyService
 
 
-import time
 class Container:
 
     def __init__(self, port=50051):
@@ -29,7 +28,6 @@ class Container:
     def stop(self):
         self.grpcServer.stop(None)
         self.grpcServer.wait_for_termination()
-        time.sleep(2)
         print("GrpcServer stopped")
 
 

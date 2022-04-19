@@ -2,9 +2,9 @@ FROM python:3.7
 
 RUN pip install --upgrade pip
 
-COPY . /opt/msu.ai/
+COPY . /opt/dummy/
 
-WORKDIR /opt/msu.ai/
+WORKDIR /opt/dummy/
 
 RUN pip install --no-cache-dir -r req.txt
 
