@@ -1,2 +1,2 @@
 # grpc.container
-Template for gRPC based ML progects
+Template for gRPC based ML projects
